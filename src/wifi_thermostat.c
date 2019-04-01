@@ -20,7 +20,7 @@
  *
  */
 
-#define DEVICE_MANUFACTURER "Kristian Dimitrov"
+#define DEVICE_MANUFACTURER "Lizzus"
 #define DEVICE_NAME "Wifi-Thermostat"
 #define DEVICE_MODEL "Basic"
 #define DEVICE_SERIAL "12345678"
