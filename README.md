@@ -1,15 +1,6 @@
 # homekit-thermostat-with-display
 
 A thermostat accessory for remotely controlling central heating.
-This provides a thermostat accessory, You also need a swith accessory and to set up event trigers in the Eve app to make the 
-connection between the thermostat and the switch, hence it's called wifi thermostat as the connection between the thermostat 
-accessory and your central heating device is wireless.
+This is a Apple HomeKit thermostat with SSD1306 display and three buttons, with which you can adjust the temperature up / down. The third button is to change the mode and reset the homeKit configuration. This thermostat communicates with a relay to control the heater.
 
-It uses a DH22 to sense the temperature and sets the current_heating_cooling_status based on the other settings of the 
-accessory. It sends events as the value changes, which can then be actioned by triggers using the Eve app.
-
-For example when the thermostat sets the current_heating_cooling_status to heat/off, use Eve to trigger the switch accesory 
-to on/off respectively. You can also set timer based events in Eve to control the target_heating_cooling_status, in other 
-words you can create a program of when you want the heating to go on or off. 
-
-Now updated to include a screen (SSD1306 OLED) and buttons to adjust up and down the target temperature. 
+It uses a nodemcu, a DHT22 sensor, a SSD1306 OLED display and a KY-019 relay.
